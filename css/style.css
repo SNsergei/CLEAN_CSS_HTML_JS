@@ -1,0 +1,85 @@
+body {
+  background: #fff;
+  font-family: "Source Sans Pro";
+}
+
+.container {
+  max-width: 1545px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 49px;
+  color: #383f47;
+  line-height: 72.52px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.53px;
+  margin-top: 61px;
+}
+
+.panel {
+  margin-top: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 13px;
+}
+
+.panel button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 72.52px;
+  text-transform: uppercase;
+  letter-spacing: 0.21px;
+  padding: 0 36px;
+}
+
+.new-order {
+  -webkit-box-shadow: 0 0 21px #fff1ae;
+          box-shadow: 0 0 21px #fff1ae;
+  background-color: #ffdc3a;
+  border-radius: 26px;
+  border: 1px solid #ffdc3a;
+  color: #383f47;
+  text-transform: uppercase;
+  letter-spacing: 0.21px;
+  font-size: 17px;
+}
+
+.actived {
+  color: #ffffff;
+  background-color: #27a256;
+  border: 1px solid #27a256;
+}
+
+.blocked {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  color: #383f47;
+}
+
+hr {
+  width: 905px;
+  height: 2px;
+  background-color: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/SourceSansPro-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+/*# sourceMappingURL=style.css.map */

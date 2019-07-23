@@ -1,0 +1,110 @@
+header{
+    font-family: "Source Sans Pro";
+    color: #383f47;
+    font-weight: bold;
+}
+.header{
+    width: 100%;
+    &-logo{
+        background-image: url('../icons/Logo.svg');
+        width: 60px;
+        height: 49px;
+        background-size: cover;
+
+    }
+    &-link{
+        color: #383f47;
+        text-transform: uppercase;
+        padding-right: 35px;
+        font-size: 14px;
+    }
+    &__top{
+        padding: 10px 30px 10px 40px;
+        justify-content: space-between;
+        display: flex;
+        
+    }
+    &__center{
+        display: flex;
+        align-items: center;
+        & ul{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        
+        &-logout{
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #ffffff;
+            padding: 8px 11px 10px 11px;
+            box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.18);
+            background-color: #27a256;
+            border: 1px solid #27a256;
+
+        }
+        &-icon{
+            cursor: pointer;
+            margin-right: 15px;
+            background-image: url("../icons/people.svg");
+            width: 43px;
+            height: 43px;
+            background-size: cover;
+        }
+    }
+    &__bottom{
+        min-height: 50px;
+        border: 1px solid #e8e8e8;
+        padding-left: 135px;
+        padding-right: 32px;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-nav{
+            letter-spacing: 0.35px;
+            & a{
+                color: #383f47;
+                padding: 16px 25px 16px 25px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        &-points{
+            text-align: center;
+            vertical-align: center;
+            margin-left: 13px;
+        }
+    }
+}
+.nav-list:last-child {
+    margin-right: 90px;
+}
+.points{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.35px;
+    color: #383f47;
+    text-transform: lowercase;
+    padding: 8px 19px 5px 19px;
+    box-shadow: 0 0 13px rgba(255, 220, 58, 0.42);
+    background-color: #ffdc3a;
+    border-radius: 13px;
+}
+.checked{
+    color: #27a256!important;
+    letter-spacing: 0.35px;
+    border-bottom: 1px solid #27a256;
+}
+h1{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
