@@ -1,0 +1,17 @@
+body {
+  background: #fff;
+  font-family: "Source Sans Pro";
+}
+
+.container {
+  max-width: 1545px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../fonts/SourceSansPro-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+/*# sourceMappingURL=style.css.map */
