@@ -83,7 +83,7 @@ header {
 
 .header__bottom {
   min-height: 50px;
-  border: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
   padding-left: 135px;
   padding-right: 32px;
   -webkit-box-sizing: border-box;
@@ -113,8 +113,7 @@ header {
 
 .header__bottom-points {
   text-align: center;
-  vertical-align: center;
-  margin-left: 13px;
+  margin-left: 50px;
 }
 
 .nav-list:last-child {
