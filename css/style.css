@@ -30,6 +30,7 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 13px;
+  margin-bottom: 69px;
 }
 
 .panel button {
@@ -74,6 +75,118 @@ hr {
   border: 1px solid #e8e8e8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.order__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e8e8e8;
+  border-radius: 15px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.order__block {
+  border-right: 1px solid #e8e8e8;
+  padding: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 0.45px;
+}
+
+.order__block p {
+  margin-top: 5px;
+}
+
+.order__block:last-child {
+  border-right: none;
+}
+
+.order-number {
+  margin-right: 30px;
+}
+
+.order-date {
+  margin-right: 42px;
+  font-weight: bold;
+  letter-spacing: 0.45px;
+}
+
+.order-date-end {
+  color: #e8e8e8;
+}
+
+.order-title {
+  color: #383f47;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.order-price {
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 27.89px;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+}
+
+.order-price-ruble {
+  font-size: 25px;
+  letter-spacing: 0.45px;
+}
+
+.order-gear {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  cursor: pointer;
+}
+
+.order-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 112px;
+}
+
+.order-more span {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.21px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.green-button {
+  padding: 17px 25px;
+  -webkit-box-shadow: 0 15px 29px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 15px 29px rgba(0, 0, 0, 0.18);
+  border-radius: 23px;
+  background-color: #27a256;
+  border: 1px solid #27a256;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @font-face {

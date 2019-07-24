@@ -1,62 +1,321 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js"></script>
-    
+    <script src="https://kit.fontawesome.com/72556d9494.js"></script>
+
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header__top">
-            <div class="header-logo"></div>
-            <div class="header__center">
-                <nav>
-                    <ul class="nav-list">
-                        <li><a class="header-link" href="#">экспресс уборка</a></li>
-                        <li><a class="header-link" href="#">стандартная уборка</a></li>
-                        <li><a class="header-link" href="#">генеральная уборка</a></li>
-                        <li><a class="header-link" href="#">после ремонта</a></li>
-                        <li><a class="header-link" href="#">мытье окон</a></li>
-                        <li><a class="header-link" href="#">все услуги</a></li>
-                    </ul>
-                </nav>
-                <div class="header__left-icon"></div>
-                <button class="header__left-logout">Выйти</button>
-            </div>
-               
+      <div class="header__top">
+        <div class="header-logo"></div>
+        <div class="header__center">
+          <nav>
+            <ul class="nav-list">
+              <li><a class="header-link" href="#">экспресс уборка</a></li>
+              <li><a class="header-link" href="#">стандартная уборка</a></li>
+              <li><a class="header-link" href="#">генеральная уборка</a></li>
+              <li><a class="header-link" href="#">после ремонта</a></li>
+              <li><a class="header-link" href="#">мытье окон</a></li>
+              <li><a class="header-link" href="#">все услуги</a></li>
+            </ul>
+          </nav>
+          <div class="header__left-icon"></div>
+          <button class="header__left-logout">Выйти</button>
         </div>
-        <div class="header__bottom">
-            <div class="header__bottom-points">
-                <span>бонусы</span>
-                <span class="points">0 р.</span>
-            </div>
-            <div class="header__bottom-nav">
-                <a class="checked" href="#" >мои заказы</a>
-                <a href="#">скидка за друзей</a>
-                <a href="#">подарки</a>
-                <a href="#">профиль</a>
-            </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__bottom-points">
+          <span>бонусы</span>
+          <span class="points">0 р.</span>
         </div>
+        <div class="header__bottom-nav">
+          <a class="checked" href="#">мои заказы</a>
+          <a href="#">скидка за друзей</a>
+          <a href="#">подарки</a>
+          <a href="#">профиль</a>
+        </div>
+      </div>
     </header>
-</body>
-<main>
+  </body>
+  <main>
     <div class="container">
-        <h1>Мои заказы</h1>
-        <div class="panel">
-            <button class="actived">Актуальные</button>
-            <button class="blocked">Выполненые</button>
-            <hr>
-            <button class="new-order">Новый заказ</button>
+      <h1>Мои заказы</h1>
+      <div class="panel">
+        <button class="actived">Актуальные</button>
+        <button class="blocked">Выполненые</button>
+        <hr />
+        <button class="new-order">Новый заказ</button>
+      </div>
+      <div class="order__wrapper">
+        <div class="order__block">
+          <span class="order-title">
+            дата:
+          </span>
+          <p class="order-date">
+            23 июня, СБ <br />16:00<span class="order-date-end"> - 17:00</span>
+          </p>
         </div>
-        <div class="order__wrapper">
-            
+        <div class="order__block">
+          <span class="order-title">
+            Номер заказа №:
+          </span>
+          <p class="order-number">17756845</p>
         </div>
+        <div class="order__block">
+          <span class="order-title">
+            Услуга:
+          </span>
+          <p class="order-service">
+            Работа мастера (почасовая)<br />
+            Поддерживающая уборка
+          </p>
+        </div>
+        <div class="order__block">
+          <span class="order-title">
+            Адрес:
+          </span>
+          <p class="order-address">
+            г. Москва ул. Дорожная 47<br />
+            д.76 подъезд 24
+          </p>
+        </div>
+        <div class="order__block center">
+          <img class="order-gear" src="./icons/gear.png" alt="gear" />
+        </div>
+        <div class="order__block center">
+          <button class="green-button">
+            <span class="order-price">3000</span>
+            <span class="order-price-ruble">р.</span>
+          </button>
+        </div>
+      </div>
+      <div class="order__wrapper">
+        <div class="order__block">
+          <span class="order-title">
+            дата:
+          </span>
+          <p class="order-date">
+            23 июня, СБ <br />16:00<span class="order-date-end"> - 17:00</span>
+          </p>
+        </div>
+        <div class="order__block">
+          <span class="order-title">
+            Номер заказа №:
+          </span>
+          <p class="order-number">17756845</p>
+        </div>
+        <div class="order__block">
+          <span class="order-title">
+            Услуга:
+          </span>
+          <p class="order-service">
+            Работа мастера (почасовая)<br />
+            Поддерживающая уборка
+          </p>
+        </div>
+        <div class="order__block">
+          <span class="order-title">
+            Адрес:
+          </span>
+          <p class="order-address">
+            г. Москва ул. Дорожная 47<br />
+            д.76 подъезд 24
+          </p>
+        </div>
+        <div class="order__block center">
+          <img class="order-gear" src="./icons/gear.png" alt="gear" />
+        </div>
+        <div class="order__block center">
+          <button class="green-button">
+            <span class="order-price">3000</span>
+            <span class="order-price-ruble">р.</span>
+          </button>
+        </div>
+      </div>
+      <div class="order__wrapper">
+        <div class="order__block">
+          <span class="order-title">
+            дата:
+          </span>
+          <p class="order-date">
+            23 июня, СБ <br />16:00<span class="order-date-end"> - 17:00</span>
+          </p>
+        </div>
+        <div class="order__block">
+          <span class="order-title">
+            Номер заказа №:
+          </span>
+          <p class="order-number">17756845</p>
+        </div>
+        <div class="order__block">
+          <span class="order-title">
+            Услуга:
+          </span>
+          <p class="order-service">
+            Работа мастера (почасовая)<br />
+            Поддерживающая уборка
+          </p>
+        </div>
+        <div class="order__block">
+          <span class="order-title">
+            Адрес:
+          </span>
+          <p class="order-address">
+            г. Москва ул. Дорожная 47<br />
+            д.76 подъезд 24
+          </p>
+        </div>
+        <div class="order__block center">
+          <img class="order-gear" src="./icons/gear.png" alt="gear" />
+        </div>
+        <div class="order__block center">
+          <button class="green-button">
+            <span class="order-price">3000</span>
+            <span class="order-price-ruble">р.</span>
+          </button>
+        </div>
+      </div>
+      <div class="order__wrapper">
+        <div class="order__block">
+          <span class="order-title">
+            дата:
+          </span>
+          <p class="order-date">
+            23 июня, СБ <br />16:00<span class="order-date-end"> - 17:00</span>
+          </p>
+        </div>
+        <div class="order__block">
+          <span class="order-title">
+            Номер заказа №:
+          </span>
+          <p class="order-number">17756845</p>
+        </div>
+        <div class="order__block">
+          <span class="order-title">
+            Услуга:
+          </span>
+          <p class="order-service">
+            Работа мастера (почасовая)<br />
+            Поддерживающая уборка
+          </p>
+        </div>
+        <div class="order__block">
+          <span class="order-title">
+            Адрес:
+          </span>
+          <p class="order-address">
+            г. Москва ул. Дорожная 47<br />
+            д.76 подъезд 24
+          </p>
+        </div>
+        <div class="order__block center">
+          <img class="order-gear" src="./icons/gear.png" alt="gear" />
+        </div>
+        <div class="order__block center">
+          <button class="green-button">
+            <span class="order-price">3000</span>
+            <span class="order-price-ruble">р.</span>
+          </button>
+        </div>
+      </div>
+      <div class="order-more">
+        <button class="green-button"><span>Показать больше</span></button>
+      </div>
     </div>
-</main>
+  </main>
+  <footer class="footer__wrapper">
+    <div class="container">
+      <div class="footer__top">
+        <ul class="footer-list">
+          <span class="footer-title">Услуги</span>
+          <li><a class="footer-link" href="#">экспресс уборка</a></li>
+          <li><a class="footer-link" href="#">стандартная уборка</a></li>
+          <li><a class="footer-link" href="#">генеральная уборка</a></li>
+          <li><a class="footer-link" href="#">уборка после ремонта</a></li>
+          <li><a class="footer-link" href="#">химчистка</a></li>
+          <li><a class="footer-link" href="#">офисы</a></li>
+          <li><a class="footer-link" href="#">загородные дома</a></li>
+        </ul>
+        <ul class="footer-list">
+          <span class="footer-title">О сервисе</span>
+          <li><a class="footer-link" href="#">Личный кабинет</a></li>
+          <li><a class="footer-link" href="#">Обслуживание по подписке</a></li>
+          <li><a class="footer-link" href="#">цены</a></li>
+          <li><a class="footer-link" href="#">вопросы</a></li>
+          <li><a class="footer-link" href="#">подарки</a></li>
+          <li><a class="footer-link" href="#">контакты</a></li>
+        </ul>
+        <ul class="footer-list">
+          <span class="footer-title">Работа</span>
+          <li><a class="footer-link" href="#">стать клинером</a></li>
+          <li><a class="footer-link" href="#">вакансии</a></li>
+        </ul>
+        <div class="footer-feedback">
+          <span class="footer-title">Задать вопрос</span>
+          <div class="footer-feedback-social">
+            <div class="footer-feedback-current tgram">
+              <div class="footer-feedback-logo">
+                <img src="./icons/tgram.svg" alt="Telegram" />
+              </div>
+              <span class="footer-feedback-text">Telegram</span>
+            </div>
+            <div class="footer-feedback-current viber">
+              <div class="footer-feedback-logo">
+                <img class="" src="./icons/viber.svg" alt="Viber" />
+              </div>
+              <span class="footer-feedback-text">Viber</span>
+            </div>
+            <div class="footer-feedback-current vk">
+              <span class="footer-feedback-text">Вконтакте</span>
+              <div class="footer-feedback-logo">
+                <img class="" src="./icons/vk.svg" alt="Vk" />
+              </div>
+            </div>
+            <div class="footer-feedback-current messanger">
+              <div class="footer-feedback-logo">
+                <img class="" src="./icons/messenger.svg" alt="Messanger" />
+              </div>
+              <span class="footer-feedback-text">Мессенджер</span>
+            </div>
+          </div>
+          <span class="footer-phone">+7 (499) 490-60-28<br /></span>
+          <span class="footer-email">info@do-clean.ru</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-part">
+          <div class="footer__bottom-links">
+            <a class="footer-link" href="#">Договор офёрты </a>
+            <a class="footer-link" href="#">пользовательское соглашение</a>
+          </div>
+          <div>
+            <img class="footer__bottom-img" src="./icons/sovest.png" alt="Совесть" />
+            <img class="footer__bottom-img" src="./icons/mastercard.png" alt="" />
+            <img class="footer__bottom-img" src="./icons/visa.png" alt="" />
+          </div>
+        </div>
+        <div class="footer__bottom-part">
+          <div class="footer__bottom-social">
+            <a href="#"><img src="./icons/facebook.png" alt="facebook"/></a>
+            <a href="#"><img src="./icons/instagram.png" alt="instagram"/></a>
+            <a href="#"><img src="./icons/vk.png" alt="VK"/></a>
+            <a href="#"><img src="./icons/ok.png" alt="OK" /> </a>
+          </div>
+          <div class="footer__bottom-info">
+            <p>ИНН: 5003057822003</p>
+            <p>ОГРНИП: 318774600331582</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
