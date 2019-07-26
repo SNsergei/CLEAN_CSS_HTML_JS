@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="../styles/header.css" />
@@ -46,7 +46,7 @@
       </div>
     </header>
     <main>
-      <div class="container" style="display: none">
+      <div class="container" style="display: block">
         <h1>Мои заказы</h1>
         <div class="panel">
           <button class="actived">Актуальные</button>
@@ -238,69 +238,36 @@
           <button class="green-button"><span>Показать больше</span></button>
         </div>
       </div>
-      <div class="container part1" style="display: none">
-        <h2>Оформление заказа - ШАГ 1 из 3</h2>
-        <div class="new_order">
-          <form action="" method="POST">
-            <div class="left">
-              <div class="left-title-block">
-                <h3>Выберите адресс</h3>
-                <hr />
-              </div>
-              <input
-                type="text"
-                name="address"
-                class="input-with-button"
-                id="address"
-                value="1    г.Москва, ул.Октября, д.7, кв. 15"
-                required
-              />
-              <button class="add-input"></button>
-              <div class="left-choose-block-second">
+      <form action="" method="POST">
+        <div class="container part1" style="display: block">
+          <h2>Оформление заказа - ШАГ 1 из 3</h2>
+          <div class="new_order">
+            <div class="new_order-form">
+              <div class="left">
                 <div class="left-title-block">
-                  <h3>Выберите услугу</h3>
+                  <h3>Выберите адресс</h3>
                   <hr />
                 </div>
-                <select
-                  class="left-choose-input"
-                  name="service"
-                  id="service"
+                <input
+                  type="text"
+                  name="address"
+                  class="input-with-button w92"
+                  id="address"
+                  value="1    г.Москва, ул.Октября, д.7, кв. 15"
                   required
-                  class=""
-                >
-                  <option style="display: none" value="">услуга</option>
-                  <option value="">Эксперсс уборка</option>
-                  <option value="">Стандартная уборка</option>
-                  <option value="">Стандартная уборка</option>
-                  <option value="">После ремонта</option>
-                  <option value="">Мытье окон</option>
-                </select>
-              </div>
-              <div class="left-choose-wrap">
-                <div class="left-choose-block">
-                  <label for="room-count">количество комнат</label><br />
-
+                />
+                <button class="add-input"></button>
+                <div class="left-choose-block-second">
+                  <div class="left-title-block">
+                    <h3>Выберите услугу</h3>
+                    <hr />
+                  </div>
                   <select
-                    class="left-choose-input"
-                    name="room-count"
-                    id="room-count"
+                    class="left-choose-select"
+                    name="service"
+                    id="service"
                     required
-                  >
-                    <option style="" value="">услуга</option>
-                    <option value="">Эксперсс уборка</option>
-                    <option value="">Стандартная уборка</option>
-                    <option value="">Стандартная уборка</option>
-                    <option value="">После ремонта</option>
-                    <option value="">Мытье окон</option>
-                  </select>
-                </div>
-                <div class="left-choose-block">
-                  <label for="wc-count">количество санузлов</label><br />
-                  <select
-                    class="left-choose-input"
-                    name="wc-count"
-                    id="wc-count"
-                    required
+                    class=""
                   >
                     <option style="display: none" value="">услуга</option>
                     <option value="">Эксперсс уборка</option>
@@ -310,574 +277,724 @@
                     <option value="">Мытье окон</option>
                   </select>
                 </div>
+                <div class="left-choose-wrap">
+                  <div class="left-choose-block">
+                    <label for="room-count">количество комнат</label><br />
+
+                    <select
+                      class="left-choose-select"
+                      name="room-count"
+                      id="room-count"
+                      required
+                    >
+                      <option style="" value="">услуга</option>
+                      <option value="">Эксперсс уборка</option>
+                      <option value="">Стандартная уборка</option>
+                      <option value="">Стандартная уборка</option>
+                      <option value="">После ремонта</option>
+                      <option value="">Мытье окон</option>
+                    </select>
+                  </div>
+                  <div class="left-choose-block">
+                    <label for="wc-count">количество санузлов</label><br />
+                    <select
+                      class="left-choose-select"
+                      name="wc-count"
+                      id="wc-count"
+                      required
+                    >
+                      <option style="display: none" value="">услуга</option>
+                      <option value="">Эксперсс уборка</option>
+                      <option value="">Стандартная уборка</option>
+                      <option value="">Стандартная уборка</option>
+                      <option value="">После ремонта</option>
+                      <option value="">Мытье окон</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="left-title-block mt-30">
+                  <h3>Выберите адресс</h3>
+                  <hr />
+                </div>
+                <div class="radio">
+                  <input
+                    type="radio"
+                    name="often"
+                    id="radio1"
+                    value="Разовая"
+                    required
+                  />
+                  <label for="radio1">Разовая</label>
+                  <input
+                    type="radio"
+                    name="often"
+                    id="radio2"
+                    value="Раз в неделю"
+                  />
+                  <label for="radio2">Раз в неделю -20%</label>
+                  <input
+                    type="radio"
+                    name="often"
+                    id="radio3"
+                    value="Раз в 2 недели"
+                  />
+                  <label for="radio3">Раз в 2 недели - 10%</label>
+                  <input
+                    type="radio"
+                    name="often"
+                    id="radio4"
+                    value="Раз в месяц"
+                  />
+                  <label for="radio4">Раз в месяц - 5%</label>
+                </div>
+                <div class="other-radio">
+                  <div class="other-radio-current">
+                    <input type="radio" name="other-service" id="radio6" />
+                    <label for="radio6">помыть окна</label><br />
+                  </div>
+                  <div class="other-radio-current">
+                    <input type="radio" name="other-service" id="radio7" />
+                    <label for="radio7">помыть окна и балкон 3м.</label><br />
+                  </div>
+                  <div class="other-radio-current">
+                    <input type="radio" name="other-service" id="radio8" />
+                    <label for="radio8">помыть окна и балкон 6м.</label>
+                  </div>
+                </div>
               </div>
-              <div class="left-title-block mt-30">
-                <h3>Выберите адресс</h3>
-                <hr />
+              <div class="right">
+                <div class="right-title">
+                  <span>Ваш заказ</span>
+                </div>
+                <div class="right-description">
+                  <div class="right-title-small">
+                    <p class="right-title-small">Услуга</p>
+                    <span
+                      >поддерживающая<br />
+                      уборка 40м.2</span
+                    >
+                  </div>
+                  <div class="right-count">x1</div>
+                  <span class="price">2000 р.</span>
+                </div>
+                <div class="right-description">
+                  <div class="right-title-small">
+                    <p class="right-title-small">дополнительно</p>
+                    <span>оконные жалюзи</span>
+                  </div>
+                  <div class="right-count">x1</div>
+                  <span class="price">2000 р.</span>
+                </div>
+                <div class="right-description">
+                  <div class="right-title-small">
+                    <p class="right-title-small">Частота</p>
+                    <span>Разовая</span>
+                  </div>
+                </div>
+                <div class="right-price">
+                  <span class="right-price-text">Итого:</span>
+                  <span class="right-price-current">2000 р.</span>
+                </div>
+                <div class="promo">
+                  <div class="promo-title">
+                    <p>промокод:</p>
+                  </div>
+                  <input
+                    type="text"
+                    name="promo"
+                    id="promo"
+                    value="____  ____  ____  ____"
+                  />
+                </div>
+                <div class="right-submit">
+                  <button>быстрый заказ</button>
+                </div>
               </div>
-              <div class="radio">
+              <button type="submit" class="submit footer-button">далее</button>
+            </div>
+          </div>
+        </div>
+        <div class="container part2" style="display: block">
+          <h2>Оформление заказа - ШАГ 2 из 3</h2>
+          <div class="new_order">
+            <div class="new_order-form">
+              <div class="left">
+                <div class="left-title-block">
+                  <h3>Дополнительные услуги при заказе уборки</h3>
+                  <hr class="part2-hr" />
+                </div>
+                <div class="additional__wrapper  spb">
+                  <div class="additional__current">
+                    <div class="additional__current-image">
+                      <img src="../icons/Ключи 1.svg" alt="" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span>Забрать ключи</span>
+                    </div>
+                    <div class="additional__current-price">
+                      <p>+300 р.</p>
+                    </div>
+                  </div>
+                  <div class="additional__current">
+                    <div class="additional__current-image">
+                      <img src="../icons/Ключи 2.svg" alt="" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span>доставка ключей</span>
+                    </div>
+                    <div class="additional__current-price">
+                      <p>+300 р.</p>
+                    </div>
+                  </div>
+                  <div class="additional__current">
+                    <div class="additional__current-counter">
+                      <span>1</span>
+                    </div>
+                    <div class="additional__current-image">
+                      <img src="../icons/Окно.svg" alt="Окно" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span>мытьё окон</span>
+                    </div>
+                    <div class="additional__current-price spb">
+                      <div class="additional__current-minus">
+                        <span>-</span>
+                      </div>
+                      <p>+450 р.</p>
+                      <div class="additional__current-plus">
+                        <span>
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="additional__current">
+                    <div class="additional__current-counter">
+                      <span>1</span>
+                    </div>
+                    <div class="additional__current-image">
+                      <img src="../icons/Окно.svg" alt="Окно" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span
+                        >балконное<br />
+                        остекление</span
+                      >
+                    </div>
+                    <div class="additional__current-price spb">
+                      <div class="additional__current-minus">
+                        <span>-</span>
+                      </div>
+                      <p>+450 р.</p>
+                      <div class="additional__current-plus">
+                        <span>
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="additional__current">
+                    <div class="additional__current-counter">
+                      <span>1</span>
+                    </div>
+                    <div class="additional__current-image">
+                      <img src="../icons/Балкон  1.svg" alt="Окно" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span>уборка балкона</span>
+                    </div>
+                    <div class="additional__current-price spb">
+                      <div class="additional__current-minus">
+                        <span>-</span>
+                      </div>
+                      <p>+500 р.</p>
+                      <div class="additional__current-plus">
+                        <span>
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="additional__current">
+                    <div class="additional__current-counter">
+                      <span>1</span>
+                    </div>
+                    <div class="additional__current-image">
+                      <img src="../icons/Одежда.svg" alt="Окно" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span>Глажка</span>
+                    </div>
+                    <div class="additional__current-price spb">
+                      <div class="additional__current-minus">
+                        <span>-</span>
+                      </div>
+                      <p>1 час.</p>
+                      <div class="additional__current-plus">
+                        <span>
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="additional__current">
+                    <div class="additional__current-image">
+                      <img src="../icons/Холодильник.svg" alt="" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span
+                        >внутри<br />
+                        холодильника</span
+                      >
+                    </div>
+                    <div class="additional__current-price">
+                      <p>+500 р.</p>
+                    </div>
+                  </div>
+                  <div class="additional__current">
+                    <div class="additional__current-image">
+                      <img src="../icons/Духовка.svg" alt="" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span>внутри духовки</span>
+                    </div>
+                    <div class="additional__current-price">
+                      <p>+300 р.</p>
+                    </div>
+                  </div>
+                  <div class="additional__current">
+                    <div class="additional__current-counter">
+                      <span>1</span>
+                    </div>
+                    <div class="additional__current-image">
+                      <img src="../icons/Микроволовка.svg" alt="Окно" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span
+                        >уборка<br />
+                        микроволновки</span
+                      >
+                    </div>
+                    <div class="additional__current-price spb">
+                      <div class="additional__current-minus">
+                        <span>-</span>
+                      </div>
+                      <p>+300 р.</p>
+                      <div class="additional__current-plus">
+                        <span>
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="additional__current">
+                    <div class="additional__current-counter">
+                      <span>1</span>
+                    </div>
+                    <div class="additional__current-image">
+                      <img src="../icons/Шкаф.svg" alt="Шкаф" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span
+                        >внутри кухонных<br />
+                        шкафов</span
+                      >
+                    </div>
+                    <div class="additional__current-price spb">
+                      <div class="additional__current-minus">
+                        <span>-</span>
+                      </div>
+                      <p>+800 р.</p>
+                      <div class="additional__current-plus">
+                        <span>
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="additional__current">
+                    <div class="additional__current-counter">
+                      <span>1</span>
+                    </div>
+                    <div class="additional__current-image">
+                      <img src="../icons/Лоток.svg" alt="Лоток" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span
+                        >мытьё лотка<br />
+                        питомца</span
+                      >
+                    </div>
+                    <div class="additional__current-price spb">
+                      <div class="additional__current-minus">
+                        <span>-</span>
+                      </div>
+                      <p>+300 р.</p>
+                      <div class="additional__current-plus">
+                        <span>
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="additional__current">
+                    <div class="additional__current-counter">
+                      <span>1</span>
+                    </div>
+                    <div class="additional__current-image">
+                      <img src="../icons/Гардеробна.svg" alt="Лоток" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span
+                        >Уборка внутри<br />
+                        гардероба</span
+                      >
+                    </div>
+                    <div class="additional__current-price spb">
+                      <div class="additional__current-minus">
+                        <span>-</span>
+                      </div>
+                      <p>+600 р.</p>
+                      <div class="additional__current-plus">
+                        <span>
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="additional__current">
+                    <div class="additional__current-counter">
+                      <span>1</span>
+                    </div>
+                    <div class="additional__current-image">
+                      <img src="../icons/Люстра.svg" alt="Лоток" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span>чиста люстры</span>
+                    </div>
+                    <div class="additional__current-price spb">
+                      <div class="additional__current-minus">
+                        <span>-</span>
+                      </div>
+                      <p>+600 р.</p>
+                      <div class="additional__current-plus">
+                        <span>
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="left-title-block">
+                  <h3>Дополнительные услуги при заказе мытья окон</h3>
+                  <hr class="part2-hr" />
+                </div>
+                <div class="additional__wrapper">
+                  <div class="additional__current mr43">
+                    <div class="additional__current-counter">
+                      <span>1</span>
+                    </div>
+                    <div class="additional__current-image">
+                      <img src="../icons/Жалюзи.svg" alt="Лоток" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span>Оконные жалюзи</span>
+                    </div>
+                    <div class="additional__current-price spb">
+                      <div class="additional__current-minus">
+                        <span>-</span>
+                      </div>
+                      <p>+450 р.</p>
+                      <div class="additional__current-plus">
+                        <span>
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="additional__current">
+                    <div class="additional__current-counter">
+                      <span>1</span>
+                    </div>
+                    <div class="additional__current-image">
+                      <img src="../icons/Оконые решетки.svg" alt="Лоток" />
+                    </div>
+                    <div class="additional__current-title">
+                      <span>оконные решетки</span>
+                    </div>
+                    <div class="additional__current-price spb">
+                      <div class="additional__current-minus">
+                        <span>-</span>
+                      </div>
+                      <p>+450 р.</p>
+                      <div class="additional__current-plus">
+                        <span>
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="right">
+                <div class="right-title">
+                  <span>Ваш заказ</span>
+                </div>
+                <div class="right-description">
+                  <div class="right-title-small">
+                    <p class="right-title-small">Услуга</p>
+                    <span
+                      >поддерживающая<br />
+                      уборка 40м.2</span
+                    >
+                  </div>
+                  <div class="right-count">x1</div>
+                  <span class="price">2000 р.</span>
+                </div>
+                <div class="right-description">
+                  <div class="right-title-small">
+                    <p class="right-title-small">дополнительно</p>
+                    <span>оконные жалюзи</span>
+                  </div>
+                  <div class="right-count">x1</div>
+                  <span class="price">2000 р.</span>
+                </div>
+                <div class="right-description">
+                  <div class="right-title-small">
+                    <p class="right-title-small">Частота</p>
+                    <span>Разовая</span>
+                  </div>
+                </div>
+                <div class="right-price">
+                  <span class="right-price-text">Итого:</span>
+                  <span class="right-price-current">2000 р.</span>
+                </div>
+                <div class="promo">
+                  <div class="promo-title">
+                    <p>промокод:</p>
+                  </div>
+                  <input
+                    type="text"
+                    name="promo"
+                    id="promo"
+                    value="____  ____  ____  ____"
+                  />
+                </div>
+                <div class="right-submit">
+                  <button>быстрый заказ</button>
+                </div>
+              </div>
+              
+            </div>
+            <button class="back footer-button">Назад</button>
+            <button type="submit" class="submit  footer-button">далее</button>
+          </div>
+        </div>
+        <div class="container part3" style="display: block">
+          <h2>Оформление заказа - ШАГ 3 из 3</h2>
+          <div class="new_order">
+            <div class="new_order-form">
+              <div class="left">
+                <div class="left-title-block">
+                  <h3>Когда к вам приехать</h3>
+                  <hr class="part3-hr" />
+                </div>
                 <input
-                  type="radio"
-                  name="often"
-                  id="radio1"
-                  value="Разовая"
+                  type="date"
+                  name="date"
+                  id="date"
+                  class="input-with-button date"
+                  value="2019-06-29"
                   required
                 />
-                <label for="radio1">Разовая</label>
                 <input
-                  type="radio"
-                  name="often"
-                  id="radio2"
-                  value="Раз в неделю"
+                  type="time"
+                  name="time"
+                  id="time"
+                  class="input-with-button left-choose-input"
+                  value="08:00"
+                  required
                 />
-                <label for="radio2">Раз в неделю -20%</label>
-                <input
-                  type="radio"
-                  name="often"
-                  id="radio3"
-                  value="Раз в 2 недели"
-                />
-                <label for="radio3">Раз в 2 недели - 10%</label>
-                <input
-                  type="radio"
-                  name="often"
-                  id="radio4"
-                  value="Раз в месяц"
-                />
-                <label for="radio4">Раз в месяц - 5%</label>
-              </div>
-              <div class="other-radio">
-                <div class="other-radio-current">
-                  <input type="radio" name="other-service" id="radio6" />
-                  <label for="radio6">помыть окна</label><br />
-                </div>
-                <div class="other-radio-current">
-                  <input type="radio" name="other-service" id="radio7" />
-                  <label for="radio7">помыть окна и балкон 3м.</label><br />
-                </div>
-                <div class="other-radio-current">
-                  <input type="radio" name="other-service" id="radio8" />
-                  <label for="radio8">помыть окна и балкон 6м.</label>
-                </div>
-              </div>
-            </div>
-            <div class="right">
-              <div class="right-title">
-                <span>Ваш заказ</span>
-              </div>
-              <div class="right-description">
-                <div class="right-title-small">
-                  <p class="right-title-small">Услуга</p>
-                  <span
-                    >поддерживающая<br />
-                    уборка 40м.2</span
-                  >
-                </div>
-                <div class="right-count">x1</div>
-                <span class="price">2000 р.</span>
-              </div>
-              <div class="right-description">
-                <div class="right-title-small">
-                  <p class="right-title-small">дополнительно</p>
-                  <span>оконные жалюзи</span>
-                </div>
-                <div class="right-count">x1</div>
-                <span class="price">2000 р.</span>
-              </div>
-              <div class="right-description">
-                <div class="right-title-small">
-                  <p class="right-title-small">Частота</p>
-                  <span>Разовая</span>
-                </div>
-              </div>
-              <div class="right-price">
-                <span class="right-price-text">Итого:</span>
-                <span class="right-price-current">2000 р.</span>
-              </div>
-              <div class="promo">
-                <div class="promo-title">
-                  <p>промокод:</p>
-                </div>
-                <input
-                  type="text"
-                  name="promo"
-                  id="promo"
-                  value="____  ____  ____  ____"
-                />
-              </div>
-              <div class="right-submit">
-                <button>быстрый заказ</button>
-              </div>
-            </div>
-            <button type="submit" class="submit">далее</button>
-          </form>
-        </div>
-      </div>
-      <div class="container part2" style="display: none">
-        <h2>Оформление заказа - ШАГ 2 из 3</h2>
-        <div class="new_order">
-          <form action="" method="POST">
-            <div class="left">
-              <div class="left-title-block">
-                <h3>Дополнительные услуги при заказе уборки</h3>
-                <hr class="part2-hr" />
-              </div>
-              <div class="additional__wrapper  spb">
-                <div class="additional__current">
-                  <div class="additional__current-image">
-                    <img src="../icons/Ключи 1.svg" alt="" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span>Забрать ключи</span>
-                  </div>
-                  <div class="additional__current-price">
-                    <p>+300 р.</p>
-                  </div>
-                </div>
-                <div class="additional__current">
-                  <div class="additional__current-image">
-                    <img src="../icons/Ключи 2.svg" alt="" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span>доставка ключей</span>
-                  </div>
-                  <div class="additional__current-price">
-                    <p>+300 р.</p>
-                  </div>
-                </div>
-                <div class="additional__current">
-                  <div class="additional__current-counter">
-                    <span>1</span>
-                  </div>
-                  <div class="additional__current-image">
-                    <img src="../icons/Окно.svg" alt="Окно" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span>мытьё окон</span>
-                  </div>
-                  <div class="additional__current-price spb">
-                    <div class="additional__current-minus">
-                      <span>-</span>
-                    </div>
-                    <p>+450 р.</p>
-                    <div class="additional__current-plus">
-                      <span>
-                        +
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="additional__current">
-                  <div class="additional__current-counter">
-                    <span>1</span>
-                  </div>
-                  <div class="additional__current-image">
-                    <img src="../icons/Окно.svg" alt="Окно" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span
-                      >балконное<br />
-                      остекление</span
-                    >
-                  </div>
-                  <div class="additional__current-price spb">
-                    <div class="additional__current-minus">
-                      <span>-</span>
-                    </div>
-                    <p>+450 р.</p>
-                    <div class="additional__current-plus">
-                      <span>
-                        +
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="additional__current">
-                  <div class="additional__current-counter">
-                    <span>1</span>
-                  </div>
-                  <div class="additional__current-image">
-                    <img src="../icons/Балкон  1.svg" alt="Окно" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span>уборка балкона</span>
-                  </div>
-                  <div class="additional__current-price spb">
-                    <div class="additional__current-minus">
-                      <span>-</span>
-                    </div>
-                    <p>+500 р.</p>
-                    <div class="additional__current-plus">
-                      <span>
-                        +
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="additional__current">
-                  <div class="additional__current-counter">
-                    <span>1</span>
-                  </div>
-                  <div class="additional__current-image">
-                    <img src="../icons/Одежда.svg" alt="Окно" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span>Глажка</span>
-                  </div>
-                  <div class="additional__current-price spb">
-                    <div class="additional__current-minus">
-                      <span>-</span>
-                    </div>
-                    <p>1 час.</p>
-                    <div class="additional__current-plus">
-                      <span>
-                        +
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="additional__current">
-                  <div class="additional__current-image">
-                    <img src="../icons/Холодильник.svg" alt="" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span
-                      >внутри<br />
-                      холодильника</span
-                    >
-                  </div>
-                  <div class="additional__current-price">
-                    <p>+500 р.</p>
-                  </div>
-                </div>
-                <div class="additional__current">
-                  <div class="additional__current-image">
-                    <img src="../icons/Духовка.svg" alt="" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span>внутри духовки</span>
-                  </div>
-                  <div class="additional__current-price">
-                    <p>+300 р.</p>
-                  </div>
-                </div>
-                <div class="additional__current">
-                  <div class="additional__current-counter">
-                    <span>1</span>
-                  </div>
-                  <div class="additional__current-image">
-                    <img src="../icons/Микроволовка.svg" alt="Окно" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span
-                      >уборка<br />
-                      микроволновки</span
-                    >
-                  </div>
-                  <div class="additional__current-price spb">
-                    <div class="additional__current-minus">
-                      <span>-</span>
-                    </div>
-                    <p>+300 р.</p>
-                    <div class="additional__current-plus">
-                      <span>
-                        +
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="additional__current">
-                  <div class="additional__current-counter">
-                    <span>1</span>
-                  </div>
-                  <div class="additional__current-image">
-                    <img src="../icons/Шкаф.svg" alt="Шкаф" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span
-                      >внутри кухонных<br />
-                      шкафов</span
-                    >
-                  </div>
-                  <div class="additional__current-price spb">
-                    <div class="additional__current-minus">
-                      <span>-</span>
-                    </div>
-                    <p>+800 р.</p>
-                    <div class="additional__current-plus">
-                      <span>
-                        +
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="additional__current">
-                  <div class="additional__current-counter">
-                    <span>1</span>
-                  </div>
-                  <div class="additional__current-image">
-                    <img src="../icons/Лоток.svg" alt="Лоток" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span
-                      >мытьё лотка<br />
-                      питомца</span
-                    >
-                  </div>
-                  <div class="additional__current-price spb">
-                    <div class="additional__current-minus">
-                      <span>-</span>
-                    </div>
-                    <p>+300 р.</p>
-                    <div class="additional__current-plus">
-                      <span>
-                        +
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="additional__current">
-                  <div class="additional__current-counter">
-                    <span>1</span>
-                  </div>
-                  <div class="additional__current-image">
-                    <img src="../icons/Гардеробна.svg" alt="Лоток" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span
-                      >Уборка внутри<br />
-                      гардероба</span
-                    >
-                  </div>
-                  <div class="additional__current-price spb">
-                    <div class="additional__current-minus">
-                      <span>-</span>
-                    </div>
-                    <p>+600 р.</p>
-                    <div class="additional__current-plus">
-                      <span>
-                        +
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="additional__current">
-                  <div class="additional__current-counter">
-                    <span>1</span>
-                  </div>
-                  <div class="additional__current-image">
-                    <img src="../icons/Люстра.svg" alt="Лоток" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span>чиста люстры</span>
-                  </div>
-                  <div class="additional__current-price spb">
-                    <div class="additional__current-minus">
-                      <span>-</span>
-                    </div>
-                    <p>+600 р.</p>
-                    <div class="additional__current-plus">
-                      <span>
-                        +
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="left-title-block">
-                <h3>Дополнительные услуги при заказе мытья окон</h3>
-                <hr class="part2-hr" />
-              </div>
-              <div class="additional__wrapper">
-                <div class="additional__current mr43">
-                  <div class="additional__current-counter">
-                    <span>1</span>
-                  </div>
-                  <div class="additional__current-image">
-                    <img src="../icons/Жалюзи.svg" alt="Лоток" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span>Оконные жалюзи</span>
-                  </div>
-                  <div class="additional__current-price spb">
-                    <div class="additional__current-minus">
-                      <span>-</span>
-                    </div>
-                    <p>+450 р.</p>
-                    <div class="additional__current-plus">
-                      <span>
-                        +
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="additional__current">
-                  <div class="additional__current-counter">
-                    <span>1</span>
-                  </div>
-                  <div class="additional__current-image">
-                    <img src="../icons/Оконые решетки.svg" alt="Лоток" />
-                  </div>
-                  <div class="additional__current-title">
-                    <span>оконные решетки</span>
-                  </div>
-                  <div class="additional__current-price spb">
-                    <div class="additional__current-minus">
-                      <span>-</span>
-                    </div>
-                    <p>+450 р.</p>
-                    <div class="additional__current-plus">
-                      <span>
-                        +
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="right">
-              <div class="right-title">
-                <span>Ваш заказ</span>
-              </div>
-              <div class="right-description">
-                <div class="right-title-small">
-                  <p class="right-title-small">Услуга</p>
-                  <span
-                    >поддерживающая<br />
-                    уборка 40м.2</span
-                  >
-                </div>
-                <div class="right-count">x1</div>
-                <span class="price">2000 р.</span>
-              </div>
-              <div class="right-description">
-                <div class="right-title-small">
-                  <p class="right-title-small">дополнительно</p>
-                  <span>оконные жалюзи</span>
-                </div>
-                <div class="right-count">x1</div>
-                <span class="price">2000 р.</span>
-              </div>
-              <div class="right-description">
-                <div class="right-title-small">
-                  <p class="right-title-small">Частота</p>
-                  <span>Разовая</span>
-                </div>
-              </div>
-              <div class="right-price">
-                <span class="right-price-text">Итого:</span>
-                <span class="right-price-current">2000 р.</span>
-              </div>
-              <div class="promo">
-                <div class="promo-title">
-                  <p>промокод:</p>
-                </div>
-                <input
-                  type="text"
-                  name="promo"
-                  id="promo"
-                  value="____  ____  ____  ____"
-                />
-              </div>
-              <div class="right-submit">
-                <button>быстрый заказ</button>
-              </div>
-            </div>
-            <button class="back footer-button">Назад</button>
-            <button type="submit" class="submit  footer-button">далее</button>
-          </form>
-        </div>
-      </div>
-      <div class="container part3">
-        <h2>Оформление заказа - ШАГ 3 из 3</h2>
-        <div class="new_order">
-          <form action="" method="POST">
-            <div class="left">
-              <div class="left-title-block">
-                <h3>Когда к вам приехать</h3>
-                <hr class="part3-hr" />
-              </div>
-              <input
-                type="date"
-                name="date"
-                id="date"
-                class="input-with-button"
-                value="2019-06-29"
-                required
-              />
-              <input
-                type="time"
-                name="time"
-                id="time"
-                class="input-with-button"
-                value="08:00"
-                required
-              />
-              <div class="left-title-block">
+                <div class="left-title-block">
                   <h3>Как удобно оплатить</h3>
                   <hr class="part3-hr" />
-              </div>
-              <div class="left-choose-pay">
-                  <button class="actived m50">Картой</button>
-                  <button class="blocked">Наличными</button> 
-                  <p>Деньги спишутся после уборки. Для проверки карты мы пишем 1 рубль, и вернём обратно.</p> 
-                  <input type="text" placeholder="Номер карты" name="card" id="time" class="input-with-button">
-                </div>  
-            </div>
-            <div class="right">
-              <div class="right-title">
-                <span>Ваш заказ</span>
-              </div>
-              <div class="right-description">
-                <div class="right-title-small">
-                  <p class="right-title-small">Услуга</p>
-                  <span
-                    >поддерживающая<br />
-                    уборка 40м.2</span
-                  >
                 </div>
-                <div class="right-count">x1</div>
-                <span class="price">2000 р.</span>
-              </div>
-              <div class="right-description">
-                <div class="right-title-small">
-                  <p class="right-title-small">дополнительно</p>
-                  <span>оконные жалюзи</span>
+                <div class="left-choose-pay">
+                  <button class="actived p50">Картой</button>
+                  <button class="blocked">Наличными</button>
+                  <p>
+                    Деньги спишутся после уборки. Для проверки карты мы пишем 1
+                    рубль, и вернём обратно.
+                  </p>
+                  <div class="left-choose-inputs">
+                    <input
+                      type="text"
+                      placeholder="Номер карты"
+                      name="card"
+                      id="card"
+                      class="input-with-button"
+                    />
+                    <input
+                      type="text"
+                      name="month"
+                      id="month"
+                      class="input-with-button"
+                      placeholder="ММ/ГГ"
+                    />
+                    <input
+                      type="text"
+                      name="cvc"
+                      id="cvc"
+                      class="input-with-button"
+                      placeholder="CVC"
+                    />
+                  </div>
                 </div>
-                <div class="right-count">x1</div>
-                <span class="price">2000 р.</span>
-              </div>
-              <div class="right-description">
-                <div class="right-title-small">
-                  <p class="right-title-small">Частота</p>
-                  <span>Разовая</span>
+                <div class="left-title-block mt-30">
+                  <h3 class="mr43">Расскажите о себе</h3>
+                  <hr class="part3-hr" />
+                </div>
+                <div class="about-me__wrapper">
+                  <div class="about-me__item mr30">
+                    <div class="about-me__title">
+                      <span class="about-me__title-title"
+                        >Электронная почта<br
+                      /></span>
+                      <span class="about-me__title-description"
+                        >(Напомним об уборке и пришлем чек)</span
+                      >
+                    </div>
+                    <input
+                      required
+                      placeholder="E-Mail"
+                      type="email"
+                      class="m10 input-with-button"
+                      id="email"
+                      name="email"
+                    />
+                  </div>
+                  <div class="about-me__item">
+                    <div class="about-me__title">
+                      <span class="about-me__title-title">Имя <br /></span>
+                      <span class="about-me__title-description"
+                        >(Так мы будем обращаться к Вам в письмах)</span
+                      >
+                    </div>
+                    <input
+                      required
+                      placeholder="Имя"
+                      type="text"
+                      class="m10 input-with-button"
+                      id="name"
+                      name="name"
+                    />
+                  </div>
+                  <div class="about-me__item mr30">
+                    <div class="about-me__title">
+                      <span class="about-me__title-title">Дата рождения</span>
+                      <span class="about-me__title-description">
+                        (Пришлем подарок)</span
+                      >
+                    </div>
+                    <input
+                      required
+                      placeholder="День рождения"
+                      type="date"
+                      class="m10 input-with-button date"
+                      id="birthday"
+                      name="birthday"
+                    />
+                  </div>
+                  <div class="about-me__item">
+                    <div class="about-me__title">
+                      <span class="about-me__title-title">Фамилия</span>
+                    </div>
+                    <input
+                      required
+                      placeholder="Фамилия"
+                      type="text"
+                      class="m10 input-with-button"
+                      id="surname"
+                      name="surname"
+                    />
+                  </div>
+                </div>
+                <div class="about-me__item w100">
+                  <div class="about-me__title">
+                    <span class="about-me__title-title"
+                      >Комментарий для клинера<br
+                    /></span>
+                    <span class="about-me__title-description"
+                      >Как быстрее вас найти и на что обратить внимание во время
+                      уборки</span
+                    >
+                  </div>
+                  <textarea
+                    required
+                    class="m10 input-with-button"
+                    id="comment"
+                    name="comment"
+                  ></textarea>
                 </div>
               </div>
-              <div class="right-price">
-                <span class="right-price-text">Итого:</span>
-                <span class="right-price-current">2000 р.</span>
-              </div>
-              <div class="promo">
-                <div class="promo-title">
-                  <p>промокод:</p>
+              <div class="right">
+                <div class="right-title">
+                  <span>Ваш заказ</span>
                 </div>
-                <input
-                  type="text"
-                  name="promo"
-                  id="promo"
-                  value="____  ____  ____  ____"
-                />
-              </div>
-              <div class="right-submit">
-                <button>быстрый заказ</button>
+                <div class="right-description">
+                  <div class="right-title-small">
+                    <p class="right-title-small">Услуга</p>
+                    <span
+                      >поддерживающая<br />
+                      уборка 40м.2</span
+                    >
+                  </div>
+                  <div class="right-count">x1</div>
+                  <span class="price">2000 р.</span>
+                </div>
+                <div class="right-description">
+                  <div class="right-title-small">
+                    <p class="right-title-small">дополнительно</p>
+                    <span>оконные жалюзи</span>
+                  </div>
+                  <div class="right-count">x1</div>
+                  <span class="price">2000 р.</span>
+                </div>
+                <div class="right-description">
+                  <div class="right-title-small">
+                    <p class="right-title-small">Частота</p>
+                    <span>Разовая</span>
+                  </div>
+                </div>
+                <div class="right-price">
+                  <span class="right-price-text">Итого:</span>
+                  <span class="right-price-current">2000 р.</span>
+                </div>
+                <div class="promo">
+                  <div class="promo-title">
+                    <p>промокод:</p>
+                  </div>
+                  <input
+                    type="text"
+                    name="promo"
+                    id="promo"
+                    placeholder="____  ____  ____  ____"
+                  />
+                </div>
+                <div class="right-submit">
+                  <button>быстрый заказ</button>
+                </div>
               </div>
             </div>
             <button class="back footer-button">Назад</button>
-            <button type="submit" class="submit  footer-button">далее</button>
-          </form>
+              <button type="submit" class="submit footer-button">
+                заказать
+              </button>
+          </div>
+          
         </div>
-      </div>
+      </form>
     </main>
     <footer class="footer__wrapper">
       <div class="container">

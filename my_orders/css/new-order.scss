@@ -17,10 +17,10 @@ h3 {
     letter-spacing: 0.38px;
 }
 
-.new_order {
+.new_order{
     margin-top: 70px;
 
-    & form {
+    &-form {
         display: flex;
         flex-wrap: wrap;
     }
@@ -96,6 +96,21 @@ h3 {
             }
            
         }
+        &-select{
+            color: #383f47;
+            padding: 16px 15px;
+            font-size: 20px;
+            font-family: "Source Sans Pro";
+            font-weight: 400;
+            position: relative;
+            cursor: pointer;
+            background-color: #fff;
+            text-transform: uppercase;
+            appearance: none !important;
+            background-image: url("../../icons/plus.svg");
+            background-repeat: no-repeat;
+            background-position: 98% center;
+        }
         &-input {
             font-weight: 400;
             text-transform: uppercase;
@@ -106,10 +121,12 @@ h3 {
             font-weight: 400;
             position: relative;
             appearance: none;
-            background-image: url('../../icons/plus.svg');
-            background-repeat: no-repeat;
-            background-position: 99% 50%;
             cursor: pointer;
+        }
+        &-inputs{
+            width: 96%;
+            display: flex;
+            justify-content: space-between;
         }
     }
 
@@ -162,21 +179,21 @@ h3 {
 }
 #card{
     position: relative;
-    width: 35%;
-    &::before{
-        z-index: 2;
-        content: '1';
-        color: #000;
-    }
-    &::after{
-        content: "+";
-        z-index: 2;
-        background-color: #fff;
-        font-weight: bold;
-        cursor: pointer;
-    }
+    width: 40%;
+    background-image: url('../../icons/visaMastercard.png');
+    background-repeat: no-repeat;
+    background-position: 95% center;
 }
+#month{
+    width: 20%;
 
+}
+#cvc{
+    width: 20%;
+    background-image: url("../../icons/question.png");
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
 .radio {
     margin-top: 45px;
     width: 95%;
@@ -409,6 +426,7 @@ h3 {
     font-size: 20px;
     font-weight: 400;
     line-height: 66.52px;
+    background-color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.21px;
     font-family: "Source Sans Pro";
@@ -529,7 +547,7 @@ h3 {
         }
     }
 }
-#date{
+.date{
     margin-right: 40px;
     width: 43%;
     position: relative;
@@ -570,7 +588,37 @@ h3 {
         cursor: pointer;
     }
 }
+.about-me{
+    &__wrapper{
+        width: 96%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__title{
+        font-size: 20px;
+        font-weight: 400;
+        &-title{
+            color: #383f47;
+            letter-spacing: 0.21px;
+        }
+        &-description{
+            color: #a6a6a6;
+            text-transform: uppercase;
+            letter-spacing: 0.21px;
+        }
+    }
+    &__item{
+        width: 48%;
+        & input{
+            width: 96%;
+        }
 
+    }
+
+}
+.m10{
+    margin: 10px 0!important;
+}
 .part2-hr {
     width: calc(100% - 760px) !important;
 }
@@ -581,6 +629,7 @@ h3 {
 
 .spb {
     justify-content: space-between !important;
+    
 }
 
 .mr43 {
@@ -589,6 +638,291 @@ h3 {
 .nobg{
     background: inherit;
 }
-.m50{
+.p50{
     padding: 0 50px!important;
+}
+.mr30{
+    margin-right: 30px;
+}
+.w100{
+    width: 97%!important;
+}
+#comment{
+    width: 96%;
+    min-height: 224px;
+}
+
+.w92{
+    width: 92%;
+}
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1540px){
+    .container{
+        max-width: 1110px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .panel{
+        margin-top: 0;
+    }
+    hr{
+        width: 45%;
+    }
+    .order{
+        &__block{
+            font-size: 16px;
+            padding: 17px;
+        }
+        &-date{
+            margin-right: 0;
+        }
+        &-price{
+            font-size: 20px;
+            &-ruble{
+                font-size: 13px;
+            }
+        }
+        
+    }
+    .w92{
+        width: 89%;
+    }
+    .left-title-block{
+        hr{
+            width: calc(100% - 300px);
+        }
+    }
+    .part2-hr{
+        width: calc(100% - 642px);
+    }
+    .radio{
+        & label{
+            padding: 25px 20px 25px 20px;
+            font-size: 15px;
+        }
+    }
+    .additional{
+        &__current{
+            &-image{
+                margin: 17px 58px 0 58px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &-title{
+
+            }
+            &-price{
+
+            }
+        }
+    }
+    .date{
+        width: 40%;
+    }
+    #time{
+        width: 40%;
+    }
+    .input-with-button{
+        line-height: 50px;
+    }
+    .about-me{
+        &__title{
+            font-size: 14px;
+        }
+        &__item{
+            width: 47%;
+        }
+    }
+    .date{
+        &::-webkit-calendar-picker-indicator{
+            position: relative;
+            opacity: 1;
+            color: transparent;
+            background: #fff;
+            background-image: url("../../icons/plus.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            cursor: pointer;
+            padding: 20px 10px 20px 10px;
+            box-shadow: 0 5px 29px rgba(0, 0, 0, 0.15);
+            left: 20px;
+    
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+
+    .container{
+        max-width: 930px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .right{
+        font-size: 13px;
+    }
+    .panel{
+        margin-top: 0;
+    }
+    hr{
+        width: 30%;
+    }
+    .order{
+        &__block{
+            font-size: 12px;
+        }
+        &-title{
+                font-size: 11px;
+        }
+        &-date{
+            margin-right: 0;
+        }
+        &-gear{
+            width: 25px;
+            height: 25px;
+        }
+        &-price{
+            font-size: 11px!important;
+            &-ruble{
+                font-size: 8px!important;
+            }
+        }
+    }
+    .w92{
+        width: 88%;
+    }
+    .left{
+        width: calc(100% - 305px);
+    }
+    .right{
+        min-width: 300px;
+    }
+    .new_order-form{
+        justify-content: space-between;
+    }
+    .green-button{
+        padding: 6px 25px;
+        & span{
+            font-size: 15px;
+        }
+    }
+    .panel button{
+        line-height: 50px;
+    }
+    .radio label{
+        padding: 10px 15px 10px 15px;
+        font-size: 15px;
+    }
+    .date{
+        width: 42%;
+        &::-webkit-calendar-picker-indicator{
+            position: relative;
+            opacity: 1;
+            color: transparent;
+            background: #fff;
+            background-image: url("../../icons/plus.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            cursor: pointer;
+            padding: 15px 5px 15px 16px;
+            box-shadow: 0 5px 29px rgba(0, 0, 0, 0.15);
+            left: 20px;
+    
+        }
+    }
+    #time{
+        width: 42%;
+    }
+    .left-choose-pay button{
+        line-height: 50px;
+    }
+    .left-choose-pay p {
+        font-size: 15px;
+    }
+    .part3-hr{
+        width: calc(100% - 285px) !important;
+    }
+    .add-input{
+        padding: 25px 15px 16px 18px;
+    }
+    .about-me__title {
+        font-size: 15px;
+    }
+    .about-me__item input {
+        width: 88%;
+    }
+    .mr30{
+        margin-right: 24px;
+    }
+    .new-order {
+        font-size: 15px;
+    }
+    .footer-button {
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 32.08px;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        border-radius: 24px;
+        cursor: pointer;
+        padding: 10px 32px 10px 32px;
+    }
+    #comment {
+        width: 96%;
+        min-height: 0px;
+    }
+    .input-with-button{
+        margin-right: 0px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .left-title-block hr {
+        width: calc(100% - 250px);
+    }
+    .additional{
+        &__current{
+            &-image{
+                margin: 10px 45px 0 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &-minus{
+                    padding: 5px 15px 5px 15px;
+                }
+                &-plus{
+                    padding: 5px 15px 5px 15px;
+
+                }
+            &-title{
+                & span{
+                    font-size: 15px;
+                }
+            }
+            &-price{
+                & p{
+                    font-size: 15px;
+                }
+                margin: 0;
+            }
+        }
+    }
 }

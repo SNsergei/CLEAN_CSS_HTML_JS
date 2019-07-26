@@ -22,7 +22,7 @@ h3 {
   margin-top: 70px;
 }
 
-.new_order form {
+.new_order-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,6 +105,24 @@ h3 {
   letter-spacing: 0.24px;
 }
 
+.left-choose-select {
+  color: #383f47;
+  padding: 16px 15px;
+  font-size: 20px;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  background-color: #fff;
+  text-transform: uppercase;
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+  background-image: url("../../icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position: 98% center;
+}
+
 .left-choose-input {
   font-weight: 400;
   text-transform: uppercase;
@@ -117,10 +135,17 @@ h3 {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-image: url("../../icons/plus.svg");
-  background-repeat: no-repeat;
-  background-position: 99% 50%;
   cursor: pointer;
+}
+
+.left-choose-inputs {
+  width: 96%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .other-radio {
@@ -170,21 +195,21 @@ h3 {
 
 #card {
   position: relative;
-  width: 35%;
+  width: 40%;
+  background-image: url("../../icons/visaMastercard.png");
+  background-repeat: no-repeat;
+  background-position: 95% center;
 }
 
-#card::before {
-  z-index: 2;
-  content: '1';
-  color: #000;
+#month {
+  width: 20%;
 }
 
-#card::after {
-  content: "+";
-  z-index: 2;
-  background-color: #fff;
-  font-weight: bold;
-  cursor: pointer;
+#cvc {
+  width: 20%;
+  background-image: url("../../icons/question.png");
+  background-repeat: no-repeat;
+  background-position: 95% center;
 }
 
 .radio {
@@ -442,6 +467,7 @@ h3 {
   font-size: 20px;
   font-weight: 400;
   line-height: 66.52px;
+  background-color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.21px;
   font-family: "Source Sans Pro";
@@ -585,25 +611,25 @@ h3 {
   font-weight: 700;
 }
 
-#date {
+.date {
   margin-right: 40px;
   width: 43%;
   position: relative;
 }
 
-#date::-webkit-clear-button {
+.date::-webkit-clear-button {
   display: none;
 }
 
-#date::-webkit-inner-spin-button {
+.date::-webkit-inner-spin-button {
   display: none;
 }
 
-#date::-webkit-inner-spin-button {
+.date::-webkit-inner-spin-button {
   display: none;
 }
 
-#date::-webkit-calendar-picker-indicator {
+.date::-webkit-calendar-picker-indicator {
   position: relative;
   opacity: 1;
   color: transparent;
@@ -634,6 +660,43 @@ h3 {
   cursor: pointer;
 }
 
+.about-me__wrapper {
+  width: 96%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-me__title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.about-me__title-title {
+  color: #383f47;
+  letter-spacing: 0.21px;
+}
+
+.about-me__title-description {
+  color: #a6a6a6;
+  text-transform: uppercase;
+  letter-spacing: 0.21px;
+}
+
+.about-me__item {
+  width: 48%;
+}
+
+.about-me__item input {
+  width: 96%;
+}
+
+.m10 {
+  margin: 10px 0 !important;
+}
+
 .part2-hr {
   width: calc(100% - 760px) !important;
 }
@@ -656,7 +719,276 @@ h3 {
   background: inherit;
 }
 
-.m50 {
+.p50 {
   padding: 0 50px !important;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.w100 {
+  width: 97% !important;
+}
+
+#comment {
+  width: 96%;
+  min-height: 224px;
+}
+
+.w92 {
+  width: 92%;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1540px) {
+  .container {
+    max-width: 1110px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  .panel {
+    margin-top: 0;
+  }
+  hr {
+    width: 45%;
+  }
+  .order__block {
+    font-size: 16px;
+    padding: 17px;
+  }
+  .order-date {
+    margin-right: 0;
+  }
+  .order-price {
+    font-size: 20px;
+  }
+  .order-price-ruble {
+    font-size: 13px;
+  }
+  .w92 {
+    width: 89%;
+  }
+  .left-title-block hr {
+    width: calc(100% - 300px);
+  }
+  .part2-hr {
+    width: calc(100% - 642px);
+  }
+  .radio label {
+    padding: 25px 20px 25px 20px;
+    font-size: 15px;
+  }
+  .additional__current-image {
+    margin: 17px 58px 0 58px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .date {
+    width: 40%;
+  }
+  #time {
+    width: 40%;
+  }
+  .input-with-button {
+    line-height: 50px;
+  }
+  .about-me__title {
+    font-size: 14px;
+  }
+  .about-me__item {
+    width: 47%;
+  }
+  .date::-webkit-calendar-picker-indicator {
+    position: relative;
+    opacity: 1;
+    color: transparent;
+    background: #fff;
+    background-image: url("../../icons/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    padding: 20px 10px 20px 10px;
+    -webkit-box-shadow: 0 5px 29px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 29px rgba(0, 0, 0, 0.15);
+    left: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .container {
+    max-width: 930px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .right {
+    font-size: 13px;
+  }
+  .panel {
+    margin-top: 0;
+  }
+  hr {
+    width: 30%;
+  }
+  .order__block {
+    font-size: 12px;
+  }
+  .order-title {
+    font-size: 11px;
+  }
+  .order-date {
+    margin-right: 0;
+  }
+  .order-gear {
+    width: 25px;
+    height: 25px;
+  }
+  .order-price {
+    font-size: 11px !important;
+  }
+  .order-price-ruble {
+    font-size: 8px !important;
+  }
+  .w92 {
+    width: 88%;
+  }
+  .left {
+    width: calc(100% - 305px);
+  }
+  .right {
+    min-width: 300px;
+  }
+  .new_order-form {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .green-button {
+    padding: 6px 25px;
+  }
+  .green-button span {
+    font-size: 15px;
+  }
+  .panel button {
+    line-height: 50px;
+  }
+  .radio label {
+    padding: 10px 15px 10px 15px;
+    font-size: 15px;
+  }
+  .date {
+    width: 42%;
+  }
+  .date::-webkit-calendar-picker-indicator {
+    position: relative;
+    opacity: 1;
+    color: transparent;
+    background: #fff;
+    background-image: url("../../icons/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    padding: 15px 5px 15px 16px;
+    -webkit-box-shadow: 0 5px 29px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 29px rgba(0, 0, 0, 0.15);
+    left: 20px;
+  }
+  #time {
+    width: 42%;
+  }
+  .left-choose-pay button {
+    line-height: 50px;
+  }
+  .left-choose-pay p {
+    font-size: 15px;
+  }
+  .part3-hr {
+    width: calc(100% - 285px) !important;
+  }
+  .add-input {
+    padding: 25px 15px 16px 18px;
+  }
+  .about-me__title {
+    font-size: 15px;
+  }
+  .about-me__item input {
+    width: 88%;
+  }
+  .mr30 {
+    margin-right: 24px;
+  }
+  .new-order {
+    font-size: 15px;
+  }
+  .footer-button {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32.08px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 10px 32px 10px 32px;
+  }
+  #comment {
+    width: 96%;
+    min-height: 0px;
+  }
+  .input-with-button {
+    margin-right: 0px;
+    font-size: 14px;
+    line-height: 40px;
+  }
+  .left-title-block hr {
+    width: calc(100% - 250px);
+  }
+  .additional__current-image {
+    margin: 10px 45px 0 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .additional__current-minus {
+    padding: 5px 15px 5px 15px;
+  }
+  .additional__current-plus {
+    padding: 5px 15px 5px 15px;
+  }
+  .additional__current-title span {
+    font-size: 15px;
+  }
+  .additional__current-price {
+    margin: 0;
+  }
+  .additional__current-price p {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=new-order.css.map */
