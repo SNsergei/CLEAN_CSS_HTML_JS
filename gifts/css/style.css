@@ -1,0 +1,85 @@
+body {
+  background: #fff;
+  font-family: "Source Sans Pro";
+}
+
+.container {
+  max-width: 1545px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 49px;
+  color: #383f47;
+  line-height: 72.52px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.53px;
+  margin-top: 61px;
+}
+
+.gift__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gift__text {
+  padding: 278px 41px 108px 30px;
+}
+
+.gift__text hr {
+  margin-top: 21px;
+  margin-bottom: 31px;
+}
+
+.gift__current {
+  margin-top: 51px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url("../img/gift.png");
+  background-repeat: no-repeat;
+  max-width: 400px;
+  border: 1px solid #e8e8e8;
+  background-color: #ffffff;
+}
+
+.gift__current:hover {
+  border: 1px solid #ffdc3a;
+  cursor: pointer;
+}
+
+.gift__title {
+  font-size: 25px;
+  color: #383f47;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.27px;
+}
+
+.gift__description {
+  color: #383f47;
+  font-size: 20px;
+  letter-spacing: 0.21px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.mr {
+  margin-right: 180px;
+}
+
+.title {
+  margin-top: 51px;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../fonts/SourceSansPro-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+/*# sourceMappingURL=style.css.map */

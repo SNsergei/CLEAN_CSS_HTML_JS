@@ -8,6 +8,140 @@ body {
   margin: 0 auto;
 }
 
+.h1 {
+  padding-top: 57px;
+  font-size: 49px;
+  color: #383f47;
+  font-weight: 700;
+  line-height: 72.52px;
+  text-transform: uppercase;
+  letter-spacing: 0.53px;
+  background-size: contain;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.27px;
+  color: #383f47;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-top: 41px;
+}
+
+.copy__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 130px;
+  margin-bottom: 108px;
+  padding: 23px 23px 24px 34px;
+  -webkit-box-shadow: 0 0 13px rgba(255, 220, 58, 0.42);
+          box-shadow: 0 0 13px rgba(255, 220, 58, 0.42);
+  background-color: #ffdc3a;
+  box-shadow: 0 0 13px rgba(255, 220, 58, 0.42);
+  max-width: 620px;
+  border-radius: 25px;
+}
+
+.copy__link span {
+  font-size: 25px;
+  color: #383f47;
+  font-weight: 400;
+  letter-spacing: 0.27px;
+}
+
+.copy__sign {
+  cursor: pointer;
+}
+
+.social__title {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.21px;
+  color: #383f47;
+}
+
+.social__links {
+  margin-top: 23px;
+  margin-bottom: 89px;
+}
+
+.social__links a {
+  padding-right: 15px;
+}
+
+.social__links a img {
+  width: 50px;
+  height: 50px;
+}
+
+.how-work__block {
+  position: relative;
+  max-width: 426px;
+  border-radius: 1px;
+  background-color: #ffdc3a;
+  border: 1px solid #ffdc3a;
+  padding: 28px 36px 27px 19px;
+}
+
+.how-work__block span {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 27.89px;
+  text-transform: uppercase;
+  letter-spacing: 0.23px;
+  color: #383f47;
+}
+
+.how-work__wrapper {
+  margin-top: 83px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.how-work__img {
+  position: absolute;
+}
+
+.arrow__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.chain {
+  top: -35px;
+  right: -40px;
+}
+
+.percent {
+  top: -47px;
+  right: -55px;
+}
+
+.skidka {
+  top: -47px;
+  right: -55px;
+}
+
+.bgi {
+  background-image: url("../img/peoples.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
 @font-face {
   font-family: "Source Sans Pro";
   src: url("../../fonts/SourceSansPro-Regular.ttf");

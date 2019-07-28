@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="../styles/header.css" />
@@ -37,71 +40,113 @@
           <span class="points">0 р.</span>
         </div>
         <div class="header__bottom-nav">
-          <a href="../my_orders/">мои заказы</a>
-          <a class="checked" href="./">скидка за друзей</a>
+          <a class="checked" href="./">мои заказы</a>
+          <a href="../for_friends/">скидка за друзей</a>
           <a href="../gifts/">подарки</a>
           <a href="#">профиль</a>
         </div>
       </div>
     </header>
-    <main class="bgi">
+    <main>
       <div class="container">
-        <h1 class="h1">По 500 рублей тебе и другу</h1>
-        <div class="title">
-          <h2>
-            Поделись вашей ссылкой с друзьями. Они получат<br />
-            по 50 рублей за каждого после уборки
-          </h2>
-        </div>
-        <div class="copy__link">
-          <span>https://qlean.ru</span>
-          <img src="./img/copy-sign.png" alt="copy-sign" class="copy__sign" />
-        </div>
-        <div class="social__wrapper">
-          <div class="social__title">
-            <span>Поделитесь ссылкой с другом</span>
-          </div>
-          <div class="social__links">
-            <a href="#"><img src="../icons/facebook.png" alt="facebook"/></a>
-            <a href="#"><img src="../icons/instagram.png" alt="instagram"/></a>
-            <a href="#"><img src="../icons/vk.png" alt="VK"/></a>
-            <a href="#"><img src="../icons/ok.png" alt="OK"/></a>
-            <a href="#"><img src="../icons/tgram.svg" alt="Telegram"/></a>
-            <a href="#"><img src="../icons/viber.svg" alt="Viver"/></a>
-            <a href="#"><img src="../icons/twitter.png" alt="Twitter"/></a>
-          </div>
-        </div>
-        <div class="how-work">
-          <span class="h1">Как это работает?</span>
-
-          <div class="how-work__wrapper">
-            <div class="how-work__block">
-              <span>
-                поделитесь вашей ссылкой<br />
-                с друзьями любым удобным собом
-              </span>
-              <img class="how-work__img chain" src="./img/chain.png" alt="chain" />
+        <h1>Настройки профиля</h1>
+        <div class="setting__wrapper">
+          <div class="setting-top">
+            <div class="setting-top__title">
+              <h2>Личная информация</h2>
             </div>
-            <div class="how-work__block">
-              <span>
-                  по этой ссылке друзья могут<br>
-                  заказать первую уборку по скидке
-              </span>
-              <img class="how-work__img percent" src="./img/percent.png" alt="chain" />
-            </div>
-            <div class="how-work__block">
-                <span>
-                    когда уборки у друзей пройдут<br>
-                    скидку за каждого получите уже вы
-                </span>
-                <img class="how-work__img skidka" src="./img/skidka.png" alt="chain" />
+            <hr />
+            <button class="setting-top__button yellow">
+              Сохранить изменения
+            </button>
+          </div>
+          <div class="setting-input">
+            <div class="setting-input__wrapper">
+              <div class="setting-input__block">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя" />
               </div>
+              <div class="setting-input__block">
+                <label for="surname">Фамилия</label>
+                <input
+                  type="text"
+                  name="surname"
+                  id="surname"
+                  placeholder="Фамилия"
+                />
+              </div>
+              <div class="setting-input__block">
+                <label for="birthday">Дата рождения</label>
+                <input
+                  type="text"
+                  name="birthday"
+                  id="birthday"
+                  placeholder="Дата рождения"
+                />
+              </div>
+              <div class="setting-input__block">
+                <label for="email">E-Mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-Mail"
+                />
+              </div>
+            </div>
+            <input type="checkbox" name="news" id="news" />
+            <label class="news" for="news"
+              >получать новости и спец. предложения</label
+            >
           </div>
-          <div class="arrow__wrapper">
-              <img src="./img/arrow.png" alt="arrow">
-              <img src="./img/arrow.png" alt="arrow">
+          <div class="setting-top mt60">
+            <div class="setting-top__title">
+              <h2>Телефон</h2>
+            </div>
+            <hr class="second" />
+            <button class="setting-top__button green">
+              Сохранить изменения
+            </button>
           </div>
-
+          <div class="setting-input">
+            <div class="setting-input__wrapper">
+              <div class="setting-input__block">
+                <label for="phone">Номер телефона</label>
+                <input type="tel" name="name" id="name" placeholder="+7 (___) ___ ___ ___" />
+              </div>
+            </div>
+          </div>
+          <div class="setting-top mt60">
+                <div class="setting-top__title">
+                  <h2>способ оплаты</h2>
+                </div>
+                <hr class="third" />
+                <button class="setting-top__button green">
+                  Сохранить изменения
+                </button>
+            </div>
+            <div class="new-payment">
+                <button>+</button>
+            </div>
+            <div class="setting-top mt60">
+                    <div class="setting-top__title">
+                      <h2>Ваши адреса</h2>
+                    </div>
+                    <hr class="third" />
+                    <button class="setting-top__button greenfill">
+                        Добавить адрес
+                    </button>
+                </div>
+            <div class="address">
+                <div class="address-left">
+                    <span class="address-count">1</span>
+                </div>
+                <div class="address-center">
+                    <span class="address-center__text">Г.Ростов,  ул. Октябрьская,  д.18,  подъезд 2</span>
+                    <img class="order-gear" src="../icons/gear.png" alt="gear" />
+                </div>
+                <div class="address-right">&times;</div>
+            </div>
         </div>
       </div>
     </main>
