@@ -108,3 +108,88 @@ h1{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+@media screen and (min-width: 1200x) and (max-width: 2560px){
+    .header-mobile{
+        display: none;
+    }
+
+    .nav-list:last-child {
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+    .header-mobile{
+        display: none;
+    }
+    .after{
+        display: none;
+    }
+    .standart{
+        display: none;
+    }
+}
+@media screen and (max-width: 640px){
+    .header-pc{
+        display: none;
+    }
+    .header{
+        &__top{
+            padding: 0px 30px 0px 40px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        &__bottom{
+            display: block;
+            padding: 0;
+            border: 1px solid #e8e8e8;
+            & ul li {
+                border-top: 1px solid #e8e8e8;
+                border-bottom: 1px solid #e8e8e8;
+                box-sizing: border-box;
+
+                padding-left: 28px;
+            }
+            &-title{
+                padding: 26px 0px 22px 26px;
+                font-size: 25px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.38px;
+                color: #383f47;
+            }
+            &-link{
+                font-weight: 700;
+                line-height: 32px;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 0.35px;
+                color: #383f47;
+            }
+            &-points{
+                margin-left: 0;
+                text-transform: uppercase;
+            }
+            &-button{
+                padding: 28px 0px 20px 15px;
+                & button{
+                    font-size: 16px;
+                    font-weight: 700;
+                    padding: 16px 36px 10px 38px;
+                    background-color: #ffffff;
+                    border: 1px solid #a6a6a6;
+                    border-radius: 20px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.4px;
+                    color: #a6a6a6;
+                }
+            }
+        }
+        &__right{
+            padding: 16px 0px 15px 31px;
+            border-left: 1px solid #e8e8e8;;
+        }
+    }
+    .header-mobile{
+        display: block;
+    }
+}

@@ -72,6 +72,7 @@
             border-radius: 50px;
             box-shadow: 6px 11px 27px rgba(0, 0, 0, 0.48);
             background-color: #fff;
+
             & img {
                 display: block;
                 width: 38px;
@@ -148,7 +149,137 @@
 
     }
 }
+.w640{
+    display: none;
+}
+.footer-plus{
+    display: none;
+}
+.footer-hr{
+    display: none;
+}
+.footer-container {
+    max-width: 1545px;
+    margin: 0 auto;
+}
 
 .messanger {
     background-color: #0080ff;
+}
+
+.footer-hr {
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1540px) {
+    .w640{
+        display: none;
+    }
+    .footer-container {
+        max-width: 1110px;
+    }
+    .footer-plus{
+        display: none;
+    }
+    .footer-hr{
+        display: none;
+    }
+}
+
+@media screen and(min-width: 1000px) and (max-width: 1200px) {
+
+    .footer-container {
+        max-width: 930px !important;
+    }
+    .w640{
+        display: none;
+    }
+    .footer-plus{
+        display: none;
+    }
+    .footer-hr{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .footer-container {
+        max-width: 90%;
+    }
+    .w640{
+        display: none;
+    }
+    .footer-plus{
+        display: none;
+    }
+    .footer-hr{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer-hr{
+        display: block;
+    }
+    .w640plus{
+        display: none;
+    }
+    .w640{
+        display: block;
+    }
+    .footer {
+        &__top {
+            display: block;
+        }
+
+        &-list {
+            position: relative;
+
+            & li {
+                display: none;
+            }
+        }
+        &-feedback{
+            &-social{
+                width: 100%;
+                display: block;
+            }
+            &-current{
+                width: 100%;
+            }
+        }
+        &-plus {
+            display: block;
+            color: #383f47;
+            position: absolute;
+            right: 0;
+            top: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        &__bottom{
+            &-part{
+                display: block;
+            }
+            &-links{
+                display: none;
+            }
+            &-part2{
+                display: none;
+            }
+            &-info{
+                display: flex;
+                & p{
+                    margin: 10px 20px 20px 0px;
+                }
+            }
+        }
+    }
+    
+    .vk{
+        justify-content: space-between;
+    }
 }

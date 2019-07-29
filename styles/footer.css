@@ -165,7 +165,133 @@
   color: #2c76a6;
 }
 
+.w640 {
+  display: none;
+}
+
+.footer-plus {
+  display: none;
+}
+
+.footer-hr {
+  display: none;
+}
+
+.footer-container {
+  max-width: 1545px;
+  margin: 0 auto;
+}
+
 .messanger {
   background-color: #0080ff;
+}
+
+.footer-hr {
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1540px) {
+  .w640 {
+    display: none;
+  }
+  .footer-container {
+    max-width: 1110px;
+  }
+  .footer-plus {
+    display: none;
+  }
+  .footer-hr {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .footer-container {
+    max-width: 930px !important;
+  }
+  .w640 {
+    display: none;
+  }
+  .footer-plus {
+    display: none;
+  }
+  .footer-hr {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-container {
+    max-width: 90%;
+  }
+  .w640 {
+    display: none;
+  }
+  .footer-plus {
+    display: none;
+  }
+  .footer-hr {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer-hr {
+    display: block;
+  }
+  .w640plus {
+    display: none;
+  }
+  .w640 {
+    display: block;
+  }
+  .footer__top {
+    display: block;
+  }
+  .footer-list {
+    position: relative;
+  }
+  .footer-list li {
+    display: none;
+  }
+  .footer-feedback-social {
+    width: 100%;
+    display: block;
+  }
+  .footer-feedback-current {
+    width: 100%;
+  }
+  .footer-plus {
+    display: block;
+    color: #383f47;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .footer__bottom-part {
+    display: block;
+  }
+  .footer__bottom-links {
+    display: none;
+  }
+  .footer__bottom-part2 {
+    display: none;
+  }
+  .footer__bottom-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__bottom-info p {
+    margin: 10px 20px 20px 0px;
+  }
+  .vk {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=footer.css.map */
