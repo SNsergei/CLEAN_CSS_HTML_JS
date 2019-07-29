@@ -28,7 +28,11 @@ h1{
         & hr{
             margin-top: 21px;
             margin-bottom: 31px;
+            &:hover{
+                border: 1px solid #ffdc3a;
+            }
         }
+    
     }
     &__current{
         margin-top: 51px;
@@ -68,7 +72,39 @@ h1{
     margin-top: 51px;
 }
 
-
+@media screen and (max-width: 1540px) and (min-width: 1200px){
+    .container{
+        max-width: 1100px;
+    }
+    .mr{
+        margin-right: 0;
+    }
+    .gift__wrapper{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 850px){
+    .container{
+        max-width: 800px;
+    }
+    .mr{
+        margin-right: 0;
+    }
+    .gift__wrapper{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 850px){
+    .container{
+        max-width: 85%;
+    }
+    .mr{
+        margin-right: 0;
+    }
+    .gift__wrapper{
+        justify-content: center;
+    }
+}
 @font-face{
     font-family: "Source Sans Pro";
     src: url('../../fonts/SourceSansPro-Regular.ttf');

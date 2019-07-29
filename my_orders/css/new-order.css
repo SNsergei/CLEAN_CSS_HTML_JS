@@ -740,6 +740,10 @@ h3 {
   width: 92%;
 }
 
+.header-mobile {
+  display: none;
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1540px) {
   .container {
     max-width: 1110px;
@@ -993,174 +997,10 @@ h3 {
   }
 }
 
-@media screen and (min-width: 640px) and (max-width: 1000px) {
-  .container {
-    max-width: 90%;
+@media screen and (max-width: 1000px) {
+  .header-mobile {
+    display: block;
   }
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 20px;
-  }
-  .right {
-    font-size: 13px;
-  }
-  .panel {
-    margin-top: 0;
-  }
-  hr {
-    width: 30%;
-  }
-  .order__block {
-    font-size: 12px;
-  }
-  .order-title {
-    font-size: 11px;
-  }
-  .order-date {
-    margin-right: 0;
-  }
-  .order-gear {
-    width: 25px;
-    height: 25px;
-  }
-  .order-price {
-    font-size: 11px !important;
-  }
-  .order-price-ruble {
-    font-size: 8px !important;
-  }
-  .w92 {
-    width: 88%;
-  }
-  .left {
-    width: calc(100% - 305px);
-  }
-  .right {
-    min-width: 300px;
-  }
-  .new_order-form {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .green-button {
-    padding: 6px 25px;
-  }
-  .green-button span {
-    font-size: 15px;
-  }
-  .panel button {
-    line-height: 50px;
-  }
-  .radio label {
-    padding: 10px 15px 10px 15px;
-    font-size: 15px;
-  }
-  .date {
-    width: 42%;
-  }
-  .date::-webkit-calendar-picker-indicator {
-    position: relative;
-    opacity: 1;
-    color: transparent;
-    background: #fff;
-    background-image: url("../../icons/plus.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    cursor: pointer;
-    padding: 15px 5px 15px 16px;
-    -webkit-box-shadow: 0 5px 29px rgba(0, 0, 0, 0.15);
-            box-shadow: 0 5px 29px rgba(0, 0, 0, 0.15);
-    left: 20px;
-  }
-  #time {
-    width: 42%;
-  }
-  .left-choose-pay button {
-    line-height: 50px;
-  }
-  .left-choose-pay p {
-    font-size: 15px;
-  }
-  .part3-hr {
-    width: calc(100% - 285px) !important;
-  }
-  .add-input {
-    padding: 25px 15px 16px 18px;
-  }
-  .about-me__title {
-    font-size: 15px;
-  }
-  .about-me__item input {
-    width: 88%;
-  }
-  .mr30 {
-    margin-right: 24px;
-  }
-  .new-order {
-    font-size: 15px;
-  }
-  .footer-button {
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 32.08px;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-    border-radius: 24px;
-    cursor: pointer;
-    padding: 10px 32px 10px 32px;
-  }
-  #comment {
-    width: 96%;
-    min-height: 0px;
-  }
-  .input-with-button {
-    margin-right: 0px;
-    font-size: 14px;
-    line-height: 40px;
-  }
-  .left-title-block hr {
-    width: calc(100% - 250px);
-  }
-  .additional__current-image {
-    margin: 10px 45px 0 45px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .additional__current-minus {
-    padding: 5px 15px 5px 15px;
-  }
-  .additional__current-plus {
-    padding: 5px 15px 5px 15px;
-  }
-  .additional__current-title span {
-    font-size: 15px;
-  }
-  .additional__current-price {
-    margin: 0;
-  }
-  .additional__current-price p {
-    font-size: 15px;
-  }
-  .footer-feedback-social {
-    width: 360px;
-  }
-}
-
-@media screen and (max-width: 640px) {
   h2 {
     margin-top: 33px;
   }
@@ -1318,6 +1158,39 @@ h3 {
   }
   .about-me__item {
     width: 100%;
+  }
+  .footer-button {
+    font-size: 15px;
+    padding: 7px 25px 7px 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 900px) {
+  .spb {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  .additional__current {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 363px) {
+  .spb {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .spb360px {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .left-choose-pay button {
+    padding: 0 29px;
+  }
+  .p50 {
+    padding: 0 35px !important;
   }
 }
 /*# sourceMappingURL=new-order.css.map */

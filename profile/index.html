@@ -16,34 +16,79 @@
     <title>Document</title>
   </head>
   <body>
-    <header >
-      <div class="header__top">
-        <div class="header-logo"></div>
-        <div class="header__center">
-          <nav>
-            <ul class="nav-list">
-              <li><a class="header-link" href="#">экспресс уборка</a></li>
-              <li><a class="header-link" href="#">стандартная уборка</a></li>
-              <li><a class="header-link" href="#">генеральная уборка</a></li>
-              <li><a class="header-link" href="#">после ремонта</a></li>
-              <li><a class="header-link" href="#">мытье окон</a></li>
-              <li><a class="header-link" href="#">все услуги</a></li>
-            </ul>
-          </nav>
-          <div class="header__left-icon"></div>
-          <button class="header__left-logout">Выйти</button>
+    <header>
+      <div class="header-pc">
+        <div class="header__top">
+          <div class="header-logo"></div>
+          <div class="header__center">
+            <nav>
+              <ul class="nav-list">
+                <li><a class="header-link" href="#">экспресс уборка</a></li>
+                <li>
+                  <a class="header-link standart" href="#"
+                    >стандартная уборка</a
+                  >
+                </li>
+                <li><a class="header-link" href="#">генеральная уборка</a></li>
+                <li><a class="header-link after" href="#">после ремонта</a></li>
+                <li><a class="header-link" href="#">мытье окон</a></li>
+                <li><a class="header-link" href="#">все услуги</a></li>
+              </ul>
+            </nav>
+            <div class="header__left-icon"></div>
+            <button class="header__left-logout">Выйти</button>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__bottom-points">
+            <span>бонусы</span>
+            <span class="points">0 р.</span>
+          </div>
+          <div class="header__bottom-nav">
+            <a class="checked" href="./">мои заказы</a>
+            <a href="../for_friends/">скидка за друзей</a>
+            <a href="../gifts/">подарки</a>
+            <a href="../profile/">профиль</a>
+          </div>
         </div>
       </div>
-      <div class="header__bottom">
-        <div class="header__bottom-points">
-          <span>бонусы</span>
-          <span class="points">0 р.</span>
+      <div class="header-mobile">
+        <div class="header__top">
+          <div class="header__left">
+            <div class="header__bottom-points">
+              <span>бонусы</span>
+              <span class="points">0 р.</span>
+            </div>
+          </div>
+          <div class="header__right">
+            <img src="../icons/3stripes.png" alt="" />
+          </div>
         </div>
-        <div class="header__bottom-nav">
-          <a class="checked" href="./">мои заказы</a>
-          <a href="../for_friends/">скидка за друзей</a>
-          <a href="../gifts/">подарки</a>
-          <a href="#">профиль</a>
+        <div class="header__bottom">
+          <div class="header__bottom-title"><span>услуги</span></div>
+          <ul>
+            <li><a class="header__bottom-link" href="#">экспресс уборка</a></li>
+            <li>
+              <a class="header__bottom-link" href="#">стандартная уборка</a>
+            </li>
+            <li>
+              <a class="header__bottom-link" href="#">Генеральная уборка</a>
+            </li>
+            <li><a class="header__bottom-link" href="#">Мытье окон</a></li>
+            <li><a class="header__bottom-link" href="#">После ремонта</a></li>
+          </ul>
+          <div class="header__bottom-title"><span>Личный кабинет</span></div>
+          <ul>
+            <li><a class="header__bottom-link" href="#">мои заказы</a></li>
+            <li>
+              <a class="header__bottom-link" href="#">скидка за друзей</a>
+            </li>
+            <li><a class="header__bottom-link" href="#">подарки</a></li>
+            <li><a class="header__bottom-link" href="#">профиль</a></li>
+          </ul>
+          <div class="header__bottom-button">
+            <button>выход</button>
+          </div>
         </div>
       </div>
     </header>
@@ -151,7 +196,7 @@
       </div>
     </main>
     <footer class="footer__wrapper">
-      <div class="container">
+      <div class="footer-container">
         <div class="footer__top">
           <ul class="footer-list">
             <span class="footer-title">Услуги</span>
@@ -162,7 +207,9 @@
             <li><a class="footer-link" href="#">химчистка</a></li>
             <li><a class="footer-link" href="#">офисы</a></li>
             <li><a class="footer-link" href="#">загородные дома</a></li>
+            <div class="footer-plus">+</div>
           </ul>
+          <hr class="footer-hr" />
           <ul class="footer-list">
             <span class="footer-title">О сервисе</span>
             <li><a class="footer-link" href="#">Личный кабинет</a></li>
@@ -173,12 +220,18 @@
             <li><a class="footer-link" href="#">вопросы</a></li>
             <li><a class="footer-link" href="#">подарки</a></li>
             <li><a class="footer-link" href="#">контакты</a></li>
+            <div class="footer-plus">+</div>
           </ul>
+          <hr class="footer-hr" />
+
           <ul class="footer-list">
             <span class="footer-title">Работа</span>
             <li><a class="footer-link" href="#">стать клинером</a></li>
             <li><a class="footer-link" href="#">вакансии</a></li>
+            <div class="footer-plus">+</div>
           </ul>
+          <hr class="footer-hr" />
+
           <div class="footer-feedback">
             <span class="footer-title">Задать вопрос</span>
             <div class="footer-feedback-social">
@@ -211,7 +264,7 @@
             <span class="footer-email">info@do-clean.ru</span>
           </div>
         </div>
-        <div class="footer__bottom">
+        <div class="footer__bottom w640plus">
           <div class="footer__bottom-part">
             <div class="footer__bottom-links">
               <a class="footer-link" href="#">Договор офёрты </a>
@@ -243,6 +296,41 @@
             <div class="footer__bottom-info">
               <p>ИНН: 5003057822003</p>
               <p>ОГРНИП: 318774600331582</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom w640">
+          <div class="footer__bottom-part">
+            <div class="footer__bottom-social">
+              <a href="#"><img src="../icons/facebook.png" alt="facebook"/></a>
+              <a href="#"
+                ><img src="../icons/instagram.png" alt="instagram"
+              /></a>
+              <a href="#"><img src="../icons/vk.png" alt="VK"/></a>
+              <a href="#"><img src="../icons/ok.png" alt="OK" /> </a>
+            </div>
+          </div>
+          <div class="footer__bottom-part">
+            <div class="footer__bottom-info">
+              <p>ИНН: 5003057822003</p>
+              <p>ОГРНИП: 318774600331582</p>
+            </div>
+            <div class="footer__bottom-links">
+              <a class="footer-link" href="#">Договор офёрты </a>
+              <a class="footer-link" href="#">пользовательское соглашение</a>
+            </div>
+            <div>
+              <img
+                class="footer__bottom-img"
+                src="../icons/sovest.png"
+                alt="Совесть"
+              />
+              <img
+                class="footer__bottom-img"
+                src="../icons/mastercard.png"
+                alt=""
+              />
+              <img class="footer__bottom-img" src="../icons/visa.png" alt="" />
             </div>
           </div>
         </div>

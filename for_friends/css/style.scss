@@ -194,7 +194,7 @@ h2{
         }
     }
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 1000px){
     .header-mobile{
         display: block;
     }
@@ -219,11 +219,12 @@ h2{
             display: block;
         }
         &__block{
-            width: 80%;
+            width: 90%;
             font-size: 13px;
             line-height: 20px;
             letter-spacing: 0.2px;
             margin: 10px 0;
+            max-width: 100%;
         }
     
     }
@@ -241,7 +242,9 @@ h2{
     }
     .copy__link{
         margin-top: 30px;
-    margin-bottom: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 90%;
     }
     .social__title{
         font-size: 14px;

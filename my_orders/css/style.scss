@@ -159,7 +159,8 @@ hr{
     justify-content: center;
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 1000px){  
+
     .container{
         max-width: 90%;
     }

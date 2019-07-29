@@ -35,6 +35,10 @@ h1 {
   margin-bottom: 31px;
 }
 
+.gift__text hr:hover {
+  border: 1px solid #ffdc3a;
+}
+
 .gift__current {
   margin-top: 51px;
   -webkit-box-pack: justify;
@@ -74,6 +78,48 @@ h1 {
 
 .title {
   margin-top: 51px;
+}
+
+@media screen and (max-width: 1540px) and (min-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+  .mr {
+    margin-right: 0;
+  }
+  .gift__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 850px) {
+  .container {
+    max-width: 800px;
+  }
+  .mr {
+    margin-right: 0;
+  }
+  .gift__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    max-width: 85%;
+  }
+  .mr {
+    margin-right: 0;
+  }
+  .gift__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @font-face {

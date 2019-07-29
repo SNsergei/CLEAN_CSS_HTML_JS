@@ -198,6 +198,70 @@ h1{
     }
 }
 
+@media screen and (max-width: 1540px) and (min-width: 1200px){
+    .container{
+        max-width: 1110px;
+    }
+    .setting-input__wrapper {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 1000px){
+    .container {
+        max-width: 990px !important;
+    }
+    .setting-input__wrapper {
+        width: 100%;
+    }
+    .setting-input__block {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1000px){
+    .container {
+        max-width: 90% !important;
+    }
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 23px;
+    }
+    .setting-top__button {
+        padding: 15px 25px 15px 25px;
+        font-size: 15px;
+    }
+    .setting-input__wrapper {
+        width: 100%;
+        display: block;
+
+    }
+    .setting-input__block{
+        width: 95%;
+        & input{
+            width: 100%;
+        }
+    }
+    .address{
+        &-left{
+            & span{
+                font-size: 25px;
+            }
+        }
+        &-center{
+            & span{
+                font-size: 16px;
+            }
+            & img {
+               margin: 20px;
+            }
+        }
+        &-right{
+            margin: 20px;
+            padding: 5px 15px;
+        }
+    }
+}
 @font-face{
     font-family: "Source Sans Pro";
     src: url('../../fonts/SourceSansPro-Regular.ttf');
